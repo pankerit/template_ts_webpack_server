@@ -23,7 +23,7 @@ const conf = {
       }
     ]
   },
-  watch: true
+  target: 'node',
 }
 
 module.exports = (env, options) => {

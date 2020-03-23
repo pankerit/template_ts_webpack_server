@@ -1,16 +1,16 @@
 {
   "name": "template_ts_webpack_server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/main.js",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently  \"webpack --mode development\" \"nodemon dist/main.js\""
+    "start": "concurrently  \"webpack --mode development\" \"nodemon dist/main.js\"",
+    "build": "webpack --mode production"
   },
-  "dependencies": {
-    "@types/node": "^13.9.0",
-    "puppeteer-core": "^2.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/node": "^13.9.0",
+    "concurrently": "^5.1.0",
     "nodemon": "^2.0.2",
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.3",
