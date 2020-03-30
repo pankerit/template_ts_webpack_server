@@ -1,1 +1,3 @@
-console.log('hello worlda')
+import { hello } from "~/hello";
+
+console.log(hello + ' world')
