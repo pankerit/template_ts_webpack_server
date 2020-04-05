@@ -35,14 +35,16 @@ const alias = () => {
 
 module.exports = {
   mode: isDev ? 'development' : 'production',
-  devtool: isDev ? 'eval-cheap-module-source-map' : '',
+  devtool: isDev ? 'eval-cheap-module-source-map' : 'source-map',
+
   
   entry: './src/index.ts',
 
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'main.js',
-    publicPath: 'dist/'
+    publicPath: 'dist/',
+    devtoolModuleFilenameTemplate: '[absolute-resource-path]' // devtool
   },
   
   module: {
