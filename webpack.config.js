@@ -44,7 +44,8 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: 'main.js',
     publicPath: 'dist/',
-    devtoolModuleFilenameTemplate: '[absolute-resource-path]' // devtool
+    libraryTarget: 'this',
+    devtoolModuleFilenameTemplate: isProd && '[absolute-resource-path]' // devtool
   },
   
   module: {
