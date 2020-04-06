@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "watch": "cross-env NODE_ENV=development webpack --watch",
+    "debug": "cross-env NODE_ENV=development webpack",
     "start": "node dist/main.js",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "yarn jest"

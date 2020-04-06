@@ -35,7 +35,7 @@ const alias = () => {
 
 module.exports = {
   mode: isDev ? 'development' : 'production',
-  devtool: isDev ? 'eval-cheap-module-source-map' : 'source-map',
+  devtool: isDev ? 'source-map' : 'source-map',
 
   
   entry: './src/index.ts',
